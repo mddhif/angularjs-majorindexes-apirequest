@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <title>Major Indexes List</title>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <style>
+         
+
+      </style>
+      
+   </body>
+   </head>
+   
+   <body>
+      <h2></h2>
+      <div ng-app = "" ng-controller = "indexController">
+     
+ 
+
+         <table>
+            <tr>
+               <th>Ticker</th>
+               <th>Changes</th>
+               <th>Price</th>
+               <th>IndexName</th>
+            </tr>
+        
+            <tr ng-repeat = "index in indexes">
+               <td>{{ index.ticker }}</td>
+               <td>{{ index.changes }}</td>
+               <td>{{ index.price }}</td>
+               <td>{{index.indexName}}</td>
+            </tr>
+         </table>
+      </div>
+      
+   <script src="script.js">
+
+
+   </script>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js">
+      </script>
+      
+</html>

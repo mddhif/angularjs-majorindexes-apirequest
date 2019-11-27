@@ -1,0 +1,1 @@
+# simple angularjs-majorindexes-apirequest
